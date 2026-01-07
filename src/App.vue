@@ -2,7 +2,7 @@
 import CTASection from './components/ctaSection/CTASection.vue'
 import FeaturesSection from './components/featureSection/FeaturesSection.vue'
 import HeroSection from './components/heroProject/HeroSection.vue'
-import ProjectsGallery from './components/ProjectsGallery.vue'
+import ProjectsGallery from './components/projectGallery/ProjectsGallery.vue'
 
 const handleExplore = () => {
   const gallery = document.querySelector('.projects-gallery')

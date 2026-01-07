@@ -55,7 +55,7 @@ const emit = defineEmits<{
 const { cards } = useProjectCard()
 
 const handleClick = (project: CardProject) => {
-  emit('click', project)
+  alert('Project clicked: ' + project.title)
 }
 </script>
 
