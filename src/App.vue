@@ -3,6 +3,7 @@ import CTASection from './components/ctaSection/CTASection.vue'
 import FeaturesSection from './components/featureSection/FeaturesSection.vue'
 import HeroSection from './components/heroProject/HeroSection.vue'
 import ProjectsGallery from './components/projectGallery/ProjectsGallery.vue'
+import ModelViewerDemo from './components/ModelViewerDemo.vue'
 
 const handleExplore = () => {
   const gallery = document.querySelector('.projects-gallery')
@@ -34,6 +35,7 @@ const handleContact = () => {
 
     <main class="main-content">
       <HeroSection />
+      <ModelViewerDemo />
       <ProjectsGallery />
       <FeaturesSection />
       <CTASection @explore="handleExplore" @contact="handleContact" />

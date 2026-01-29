@@ -70,7 +70,7 @@ const { states } = useHeroProject()
   align-items: center;
   justify-content: space-between;
   gap: 4rem;
-  padding: 2rem;
+  padding: 2rem 4rem;
   position: relative;
   overflow: hidden;
 }
@@ -318,6 +318,7 @@ const { states } = useHeroProject()
   .hero {
     flex-direction: column;
     text-align: center;
+    padding: 2rem;
   }
 
   .hero-content {

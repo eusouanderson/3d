@@ -108,7 +108,20 @@
 <script setup lang="ts">
 import { useCtaSection } from './useCtaSection'
 
-const { getParticleStyle, handleExplore, handleContact } = useCtaSection()
+const emit = defineEmits<{
+  explore: []
+  contact: []
+}>()
+
+const { getParticleStyle } = useCtaSection()
+
+const handleExplore = () => {
+  emit('explore')
+}
+
+const handleContact = () => {
+  emit('contact')
+}
 </script>
 
 <style scoped>

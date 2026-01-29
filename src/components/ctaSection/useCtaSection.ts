@@ -1,20 +1,7 @@
-import { defineEmits, ref } from 'vue'
+import { ref } from 'vue'
 
 export function useCtaSection() {
   const state = ref(null)
-
-  const emit = defineEmits<{
-    expore: []
-    contact: []
-  }>()
-
-  const handleExplore = () => {
-    emit('expore')
-  }
-
-  const handleContact = () => {
-    emit('contact')
-  }
 
   const getParticleStyle = (index: number) => {
     const delay = (index * 0.3) % 5
@@ -29,14 +16,9 @@ export function useCtaSection() {
       left: `${x}%`,
     }
   }
-  const action = () => {}
 
   return {
     getParticleStyle,
-    handleContact,
-    handleExplore,
-    emit,
     state,
-    action,
   }
 }
